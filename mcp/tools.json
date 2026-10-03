@@ -1,0 +1,5 @@
+[
+  {"name": "get_pods", "description": "Read pod status for a namespace."},
+  {"name": "read_logs", "description": "Read the last log lines for one pod."},
+  {"name": "render_manifest", "description": "Render a Deployment manifest. Do not apply it."}
+]
