@@ -1,5 +1,12 @@
 # MCP Kubernetes Agent
 
+## Overview
+
+A lab for a tool-using agent that works with Kubernetes through an MCP tool schema. `mcp/tools.json` lists `get_pods`, `read_logs` and `render_manifest`, and `POST /agent/run` renders a manifest while refusing an image tagged `latest`, a replica count outside 1 to 5, and any goal that applies or deletes. The `applied` flag always stays false, and a versioned `/v1` ops API adds workspaces, job approval and audit.
+
+- **Built with:** Python, MCP tool schema, Kubernetes manifests, pytest, GitHub Actions
+- **Scope:** Local lab; it renders manifests but never applies them, and production apply is refused.
+
 <!-- project-guide:start -->
 ## Project guide
 
